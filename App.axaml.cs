@@ -19,7 +19,7 @@ namespace ToDoListApp_
             {
                 desktop.MainWindow = new MainWindow
                 {
-                    DataContext = new MainWindowViewModel(),
+                    DataContext = new MainWindowViewModel(new ToDoListApp.Services.Database()),
                 };
             }
 
